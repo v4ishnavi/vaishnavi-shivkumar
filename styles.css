@@ -1,0 +1,176 @@
+h3{
+    font-family:'Times New Roman', Times, serif;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+h4{
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(185, 242, 182);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .white-text-container {
+    background-color: #f8f9fa; 
+    color: black;
+    text-align: center;
+    padding: 10px;
+    
+    
+  }
+  .card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .footer-container {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  .increase-size{
+    font-size:30px;
+    text-align:center;
+  }
+
+.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; 
+}
+
+.timeline-entry {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+    flex-basis: calc(50% - 20px); /* Adjust the width of each entry */
+    max-width: calc(50% - 20px); /* Adjust the width of each entry */
+}
+
+
+.timeline-block {
+    display: flex;
+    align-items: flex-start; /* Align the items at the top */
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    min-width: 25px; /* Width of the dot container */
+    height: 25px; /* Height of the dot container */
+    padding-top: 5px; /* Align the dot to the top of the text */
+}
+
+.timeline-dot-new::before {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    background-color: #1c3415; /* Color of the dot */
+    border-radius: 50%;
+}
+.timeline-dot-new {
+    min-width: 25px; /* Width of the dot container */
+    height: 25px; /* Height of the dot container */
+    padding-top: 75px; /* Align the dot to the top of the text */
+}
+
+.timeline-dot::before {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    background-color: #2c94a1; /* Color of the dot */
+    border-radius: 50%;
+}
+
+.timeline-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Make sure the dot is centered to the content */
+.timeline-content h4, .timeline-content p {
+    margin-top: 0;
+}
+
+.timeline-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    width: 100%; /* Ensure the content fills the flex item */
+    margin-left: 20px; /* Spacing between dot and content */
+}
+.btn-success {
+    display: inline-block;
+    background: #0e411a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-success:hover {
+    background: #309a70;
+}
+@media (max-width: 768px) {
+    .timeline-entry {
+        flex-basis: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-badge {
+    padding: 10px 15px;
+    background-color: #6c757d;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-badge:hover {
+    background-color: #5a6268;
+}
+.extra-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* This creates space between the badges */
+}
+.badge {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.badge:hover {
+    background-color: #5a6268;
+}
